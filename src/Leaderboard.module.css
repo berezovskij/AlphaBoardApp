@@ -33,6 +33,12 @@
   font-size: 4em;
 }
 
+.topUser .photo {
+  width: 100%;
+  border-radius: 0;
+  object-fit: cover;
+}
+
 .secondUser, .thirdUser {
   border: 2px solid silver;
   display: flex;
@@ -40,6 +46,14 @@
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.secondUser .photo, .thirdUser .photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 .normalUsersContainer {
@@ -55,9 +69,8 @@
 }
 
 .photo {
-  max-width: 100px;
-  max-height: 100px;
-  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
   border-radius: 50%;
 }
 
