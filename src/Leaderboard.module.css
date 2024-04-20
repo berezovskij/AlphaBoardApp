@@ -12,6 +12,11 @@
   margin: 20px 0;
 }
 
+.photo {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
 
 .profile {
   display: flex;
@@ -54,6 +59,8 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .normalUsersContainer {
@@ -68,9 +75,5 @@
   text-align: center;
 }
 
-.photo {
-  display: block;
-  margin-bottom: 10px;
-  border-radius: 50%;
-}
+
 
