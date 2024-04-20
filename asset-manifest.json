@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AlphaBoardApp/static/css/main.0164e13c.css",
-    "main.js": "/AlphaBoardApp/static/js/main.0409535d.js",
+    "main.css": "/AlphaBoardApp/static/css/main.c1961389.css",
+    "main.js": "/AlphaBoardApp/static/js/main.854c35d4.js",
     "static/js/453.e46550f5.chunk.js": "/AlphaBoardApp/static/js/453.e46550f5.chunk.js",
     "index.html": "/AlphaBoardApp/index.html",
-    "main.0164e13c.css.map": "/AlphaBoardApp/static/css/main.0164e13c.css.map",
-    "main.0409535d.js.map": "/AlphaBoardApp/static/js/main.0409535d.js.map",
+    "main.c1961389.css.map": "/AlphaBoardApp/static/css/main.c1961389.css.map",
+    "main.854c35d4.js.map": "/AlphaBoardApp/static/js/main.854c35d4.js.map",
     "453.e46550f5.chunk.js.map": "/AlphaBoardApp/static/js/453.e46550f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0164e13c.css",
-    "static/js/main.0409535d.js"
+    "static/css/main.c1961389.css",
+    "static/js/main.854c35d4.js"
   ]
 }
