@@ -17,14 +17,31 @@ const Leaderboard = () => {
   return (
     <div className={styles.leaderboard}>
       <h1 className={styles.title}>Топ-5 Пользователей</h1>
-      {users.slice(0, 3).map((user) => (
-        <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
-          {user.photo && <img src={user.photo} alt={user.name} className={styles.photo} />}
-          <div className={styles.name}>{user.name}</div>
-        </div>
-      ))}
+      {users.map((user, index) => {
+        let userPhoto = user.photo ? (
+          <img src={user.photo} alt={user.name} className={styles.photo} />
+        ) : null;
+
+        if (index === 0) {
+          return (
+            <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
+              {userPhoto}
+              <div className={styles.name}>{user.name}</div>
+            </div>
+          );
+        }
+
+        return (
+          <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
+            <div className={styles.userContainer}>
+              {userPhoto}
+              <div className={styles.name}>{user.name}</div>
+            </div>
+          </div>
+        );
+      })}
       <div className={styles.normalUsersContainer}>
-        {users.slice(3, 5).map((user) => (
+        {users.slice(3).map((user) => (
           <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
             <div className={styles.name}>{user.name}</div>
           </div>
@@ -33,6 +50,7 @@ const Leaderboard = () => {
     </div>
   );
 };
+
 
 
 export default Leaderboard;
