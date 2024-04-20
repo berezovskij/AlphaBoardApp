@@ -13,19 +13,21 @@ const Leaderboard = () => {
   return (
     <div className={styles.leaderboard}>
       <h1 className={styles.title}>Топ-5 Пользователей</h1>
-      {/* Топ-1 пользователь */}
-      {/* ... */}
-
-      {/* Топ-2 и Топ-3 пользователи */}
+      <div className={`${styles.profile} ${styles.topUser}`}>
+        <img src={users[0].photo} alt={users[0].name} />
+        <div>{users[0].name}</div>
+      </div>
       {users.slice(1, 3).map((user) => (
         <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
-          {/* ... */}
+          <div>{user.name}</div>
         </div>
       ))}
-
-      {/* Контейнер для Топ-4 и Топ-5 пользователей */}
       <div className={styles.normalUsersContainer}>
-        {/* ... */}
+        {users.slice(3).map((user) => (
+          <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
+            <div>{user.name}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
