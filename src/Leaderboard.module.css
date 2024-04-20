@@ -1,8 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 .leaderboard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 0 20px;
 }
 
 .title {
@@ -13,67 +20,64 @@
 }
 
 .photo {
-  display: block;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.topUserContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 3px solid gold;
+}
+
+.topUserName {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.topUserPhoto {
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 50%;
 }
 
-.profile {
+.secondThirdUserContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 10px;
   width: 100%;
-}
-
-.topUser {
-  border: 3px solid gold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.topUser .name {
-  font-size: 4em;
-}
-
-.topUser .photo {
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.secondUser, .thirdUser {
   border: 2px solid silver;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-.secondUser .photo, .thirdUser .photo {
+.smallPhoto {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  object-fit: cover;
   margin-right: 10px;
-  display: flex;
-  align-items: center;
 }
 
-.normalUsersContainer {
+.secondThirdUserName {
+  font-size: 1.5em;
+}
+
+.fourthFifthUserContainer {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
+  margin: 10px 0; 
 }
 
-.normalUser {
+.fourthFifthUserName {
   border: 1px solid #cd7f32;
-  flex-basis: 48%;
+  padding: 10px;
+  flex-basis: calc(50% - 5px);
   text-align: center;
+  margin-right: 5px; 
 }
 
-
-
+.fourthFifthUserName:last-child {
+  margin-right: 0;
+}
