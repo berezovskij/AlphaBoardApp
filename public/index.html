@@ -40,5 +40,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // Слушатель события, который будет ждать полной загрузки DOM
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.Telegram.WebApp) {
+          // Инициализация кнопки
+          Telegram.WebApp.MainButton.show();
+          Telegram.WebApp.MainButton.setText('Нажмите меня');
+  
+          // Обработчик клика по кнопке
+          Telegram.WebApp.MainButton.onClick(() => {
+            console.log('Кнопка была нажата');
+          });
+        }
+      });
+    </script>
   </body>
 </html>
