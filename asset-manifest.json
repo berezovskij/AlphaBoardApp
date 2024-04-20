@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AlphaBoardApp/static/css/main.e1c7d114.css",
-    "main.js": "/AlphaBoardApp/static/js/main.f7836bc4.js",
+    "main.css": "/AlphaBoardApp/static/css/main.91f3cdcf.css",
+    "main.js": "/AlphaBoardApp/static/js/main.6d5fb2c4.js",
     "static/js/453.e46550f5.chunk.js": "/AlphaBoardApp/static/js/453.e46550f5.chunk.js",
     "static/media/Zincite.png": "/AlphaBoardApp/static/media/Zincite.c7f903eed39c1473eaaa.png",
     "static/media/Cerussite.png": "/AlphaBoardApp/static/media/Cerussite.acaa154198fec49fd532.png",
     "static/media/Charoit.png": "/AlphaBoardApp/static/media/Charoit.f6b3da19a04927721054.png",
     "index.html": "/AlphaBoardApp/index.html",
-    "main.e1c7d114.css.map": "/AlphaBoardApp/static/css/main.e1c7d114.css.map",
-    "main.f7836bc4.js.map": "/AlphaBoardApp/static/js/main.f7836bc4.js.map",
+    "main.91f3cdcf.css.map": "/AlphaBoardApp/static/css/main.91f3cdcf.css.map",
+    "main.6d5fb2c4.js.map": "/AlphaBoardApp/static/js/main.6d5fb2c4.js.map",
     "453.e46550f5.chunk.js.map": "/AlphaBoardApp/static/js/453.e46550f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1c7d114.css",
-    "static/js/main.f7836bc4.js"
+    "static/css/main.91f3cdcf.css",
+    "static/js/main.6d5fb2c4.js"
   ]
 }
