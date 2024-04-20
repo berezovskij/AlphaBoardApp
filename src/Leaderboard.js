@@ -16,10 +16,6 @@ const users = [
 const Leaderboard = () => {
   return (
     <div className={styles.leaderboard}>
-      <header>
-        <h1 className={styles.title}>Топ-5 Пользователей</h1>
-      </header>
-      
       <section id={`user-${users[0].id}`} className={styles.topUserContainer}>
         <img src={users[0].photo} alt={users[0].name} className={styles.topUserPhoto} />
         <div className={styles.topUserName}>{users[0].name}</div>
