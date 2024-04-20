@@ -22,9 +22,20 @@
     border: 2px solid silver;
   }
   
+  .normalUsersContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
   .normalUser {
-    border: 1px solid bronze;
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #cd7f32;
     font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .photo {

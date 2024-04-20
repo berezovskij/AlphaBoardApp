@@ -12,12 +12,19 @@ const users = [
 const Leaderboard = () => {
   return (
     <div className={styles.leaderboard}>
-      {users.map(user => (
+      {users.slice(0, 3).map(user => (
         <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
           {user.photo && <img src={user.photo} alt={user.name} className={styles.photo} />}
           <div className={styles.name}>{user.name}</div>
         </div>
       ))}
+      <div className={styles.normalUsersContainer}>
+        {users.slice(3).map(user => (
+          <div key={user.id} className={`${styles.profile} ${styles[user.rank]}`}>
+            <div className={styles.name}>{user.name}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
